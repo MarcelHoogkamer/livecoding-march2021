@@ -11,3 +11,8 @@
     <header>
         <h1>Welcome to my site</h1>
     </header>
+
+    <?php if(isset($_SESSION['message'])):?>
+    <h3><?php echo $_SESSION['message']?></h3>
+    <?php unset($_SESSION['message'])?>
+    <?php endif;?>
